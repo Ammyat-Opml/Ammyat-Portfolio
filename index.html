@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aung Myint Myat, Mechatronics Engineering student at the University of Waterloo. Portfolio of robotics, mechanism, and tool design projects." />
+  <meta name="author" content="Aung Myint Myat" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#f5f1ea" />
+
+  <meta property="og:title" content="Aung Myint Myat, Engineering Portfolio" />
+  <meta property="og:description" content="Mechatronics Engineering student at the University of Waterloo. Robotics, mechanism, and tool design." />
+  <meta property="og:type" content="website" />
+
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 img-src 'self' data:;
+                 media-src 'self';
+                 style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                 font-src 'self' https://fonts.gstatic.com;
+                 script-src 'self';
+                 connect-src 'self';
+                 object-src 'none';
+                 base-uri 'self';
+                 form-action 'self';
+                 frame-ancestors 'none';
+                 upgrade-insecure-requests" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=()" />
+
+  <title>Aung Myint Myat · Mechatronics Engineering Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f5f1ea'/%3E%3Ctext x='16' y='22' font-family='Manrope,sans-serif' font-size='18' font-weight='700' fill='%23b4583a' text-anchor='middle'%3Ea%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Home">
+      <span class="brand-name">Aung Myint Myat</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="top" class="hero">
+    <div class="hero-meta">
+      <span>Portfolio</span>
+      <span class="dot-sep">·</span>
+      <span>2026</span>
+      <span class="dot-sep">·</span>
+      <span>Toronto, ON</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line">Mechanical systems,</span>
+      <span class="line">drawn, built,</span>
+      <span class="line">made to work.</span>
+    </h1>
+
+    <div class="hero-bottom">
+      <p class="hero-sub">
+        Hi, I&rsquo;m Aung. I&rsquo;m a Mechatronics Engineering student at the University of Waterloo, and I really enjoy building things you can hold. This portfolio collects four projects I&rsquo;ve worked on so far, in robotics, capstone mechanism work, and tool design. I&rsquo;m still learning a lot, and these are some of the steps along the way.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">
+          <span>View the work</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Say hello</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INDEX ========== -->
+  <section class="index">
+    <ol class="index-list">
+      <li><a href="#project-vex"><span class="ix-num">01</span><span class="ix-title">Autonomous Sorting Robot</span><span class="ix-year">2025</span></a></li>
+      <li><a href="#project-capstone"><span class="ix-num">02</span><span class="ix-title">Golf Ball Picker, Capstone</span><span class="ix-year">2024</span></a></li>
+      <li><a href="#project-sandwich"><span class="ix-num">03</span><span class="ix-title">Sandwich Drill Jig</span><span class="ix-year">2023</span></a></li>
+      <li><a href="#project-tooldesign"><span class="ix-num">04</span><span class="ix-title">Tool Design, Drill Jig</span><span class="ix-year">2023</span></a></li>
+    </ol>
+  </section>
+
+  <main id="work">
+
+    <!-- ============================
+         PROJECT 01 — VEX Sorting Robot
+    ============================ -->
+    <article class="project" id="project-vex">
+      <header class="project-header">
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <span class="project-year">September to December 2025</span>
+        </div>
+        <h2 class="project-title">Autonomous Sorting Robot</h2>
+        <p class="project-deck">A VEX&nbsp;IQ robot that tries to sort mixed objects by size and colour on its own. It handles startup, sensing, navigation, sorting, and shutdown, all written in C++.</p>
+        <ul class="project-tags">
+          <li>Robotics</li>
+          <li>Embedded C++</li>
+          <li>Sensor integration</li>
+          <li>Mechanism design</li>
+        </ul>
+      </header>
+
+      <figure class="feature-video">
+        <div class="video-wrap">
+          <video
+            src="vex-demo.mp4"
+            poster="vex-video-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Demonstration of the autonomous sorting robot"></video>
+        </div>
+        <figcaption>
+          <span class="caption-num">Fig. 01</span>
+          <span class="caption-text">A short demo of the full workflow: startup, sense, navigate, sort, shutdown.</span>
+        </figcaption>
+      </figure>
+
+      <div class="copy-grid">
+        <div class="copy-col">
+          <h3>Overview</h3>
+          <p>
+            This was a course project built on the VEX&nbsp;IQ platform. The goal was to put together a robot that could run a full autonomous routine on its own, so it powers on, looks around, drives toward objects, makes a guess about what each one is, and drops it into the right bin before shutting down. The workflow is written in C++ on VEXcode&nbsp;IQ, and I tried to build the mechanical side around what the sensors could actually see.
+          </p>
+        </div>
+        <div class="copy-col">
+          <h3>What I worked on</h3>
+          <ul class="hl-list">
+            <li><span>Wrote the full workflow in C++, which helped reduce classification errors and made runs feel more consistent during testing.</span></li>
+            <li><span>Hooked up bumper, optical, distance, and Touch&nbsp;LED sensors so the robot could tell objects apart by size and colour in mixed scenarios.</span></li>
+            <li><span>Designed a chain-driven sizing mechanism, a custom shaft coupler, and a sorting arm with enough torque to move things reliably.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Keyword block (for ATS scanning and at-a-glance scan) -->
+      <div class="keywords">
+        <div class="kw-row">
+          <span class="kw-label">Technical</span>
+          <ul class="kw-list">
+            <li>C++</li>
+            <li>VEXcode IQ</li>
+            <li>Sensor fusion</li>
+            <li>State machines</li>
+            <li>Mechanism design</li>
+            <li>Chain drives</li>
+            <li>Torque calculation</li>
+            <li>Autonomous control</li>
+            <li>Debugging</li>
+          </ul>
+        </div>
+        <div class="kw-row">
+          <span class="kw-label">Skills</span>
+          <ul class="kw-list">
+            <li>Problem-solving</li>
+            <li>Iterative testing</li>
+            <li>Attention to detail</li>
+            <li>Self-directed learning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gallery gallery-vex">
+        <figure class="frame">
+          <div class="frame-img"><img src="vex-robot-1.jpg" alt="Side view of the VEX sorting robot showing chain drive, distance sensor, and brain mount." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 02</span><span class="caption-text">Chain drive, distance sensor, brain mount.</span></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-img"><img src="vex-robot-2.jpg" alt="Front three-quarter view of the VEX robot with sorting arm raised." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 03</span><span class="caption-text">Front view, sorting arm and intake.</span></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-img"><img src="vex-robot-3.jpg" alt="Top three-quarter view of the VEX robot showing motor placement and gear train." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 04</span><span class="caption-text">Top view, drivetrain and motor placement.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ============================
+         PROJECT 02 — Golf Ball Picker
+    ============================ -->
+    <article class="project" id="project-capstone">
+      <header class="project-header">
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <span class="project-year">January to April 2024</span>
+        </div>
+        <h2 class="project-title">Golf Ball Picker, Capstone</h2>
+        <p class="project-deck">A team capstone where we tried to design a small mechanism for picking up golf balls. We took it from a rough idea to a working prototype, a written report, and a presentation to faculty.</p>
+        <ul class="project-tags">
+          <li>Capstone</li>
+          <li>Mechanism design</li>
+          <li>SolidWorks</li>
+          <li>Prototyping</li>
+        </ul>
+      </header>
+
+      <figure class="feature-image">
+        <div class="feature-img-frame"><img src="golfball-prototype.jpg" alt="Aluminum-base golf ball picker prototype with worm gear, swinging arm, and collection cup." loading="lazy" /></div>
+        <figcaption>
+          <span class="caption-num">Fig. 01</span>
+          <span class="caption-text">The final prototype on the bench. Worm-gear actuation, a swinging arm, and a capture cup.</span>
+        </figcaption>
+      </figure>
+
+      <div class="copy-grid">
+        <div class="copy-col">
+          <h3>Overview</h3>
+          <p>
+            For our capstone, my team set out to design a small mechanism that could pick up golf balls. Most existing tools are either bulky or imprecise, so we wanted to try something more compact and repeatable that we could actually build, test, and present within the time and budget we had. We combined mechanical design, CAD modelling, and a fair amount of shop time to put together a working prototype, then wrote a technical report and presented the work to faculty.
+          </p>
+        </div>
+        <div class="copy-col">
+          <h3>What I worked on</h3>
+          <ul class="hl-list">
+            <li><span>Helped design the mechanism in SolidWorks and worked through the gear ratios, geometry, and tolerances with the team.</span></li>
+            <li><span>Did hands-on shop work to machine, assemble, and refine the prototype across about three rounds of bench testing.</span></li>
+            <li><span>Contributed to the technical report and the final presentation to faculty and peers.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="keywords">
+        <div class="kw-row">
+          <span class="kw-label">Technical</span>
+          <ul class="kw-list">
+            <li>SolidWorks</li>
+            <li>Mechanism design</li>
+            <li>Worm gear drive</li>
+            <li>CAD modelling</li>
+            <li>Tolerance analysis</li>
+            <li>Prototyping</li>
+            <li>Machining</li>
+            <li>Bench testing</li>
+            <li>Technical writing</li>
+          </ul>
+        </div>
+        <div class="kw-row">
+          <span class="kw-label">Skills</span>
+          <ul class="kw-list">
+            <li>Team collaboration</li>
+            <li>Iterative design</li>
+            <li>Time management</li>
+            <li>Technical presentation</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gallery gallery-capstone">
+        <figure class="frame">
+          <div class="frame-img"><img src="golfball-team.jpg" alt="Capstone team and supervising faculty after final assembly review." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 02</span><span class="caption-text">The capstone team and our supervisor after final assembly review.</span></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-img frame-img-paper"><img src="vex-cad.png" alt="Engineering drawing of the golf ball picker mechanism with dimensioned views." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 03</span><span class="caption-text">Engineering drawing of the mechanism. Top, front, side, and isometric views.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ============================
+         PROJECT 03 — Sandwich Drill Jig
+    ============================ -->
+    <article class="project" id="project-sandwich">
+      <header class="project-header">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <span class="project-year">September to December 2023</span>
+        </div>
+        <h2 class="project-title">Sandwich Drill Jig</h2>
+        <p class="project-deck">A small fixture for drilling holes through several stacked parts at once, designed to keep everything aligned without needing a lot of operator skill.</p>
+        <ul class="project-tags">
+          <li>Jig and fixture design</li>
+          <li>SolidWorks</li>
+          <li>GD&amp;T</li>
+        </ul>
+      </header>
+
+      <div class="copy-grid">
+        <div class="copy-col">
+          <h3>Overview</h3>
+          <p>
+            When you&rsquo;re drilling through several stacked parts, keeping the holes lined up across every layer is harder than it sounds. Manual clamping and eyeballing the position tends to cause drift, especially with thin layered materials. For this course project, I designed a drill jig that holds the workpieces in a sandwich arrangement, so an operator can load the parts the same way every time and get the same hole pattern back.
+          </p>
+        </div>
+        <div class="copy-col">
+          <h3>What I worked on</h3>
+          <ul class="hl-list">
+            <li><span>Designed the jig in SolidWorks with locating pins, hardened drill bushings, and rigid top and base plates.</span></li>
+            <li><span>Worked through tolerances, dimensioning, and a bill of materials for the full assembly and detail drawings.</span></li>
+            <li><span>Produced a fully annotated GA drawing with a tolerance block, ready for shop interpretation.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="keywords">
+        <div class="kw-row">
+          <span class="kw-label">Technical</span>
+          <ul class="kw-list">
+            <li>SolidWorks</li>
+            <li>Jig and fixture design</li>
+            <li>GD&amp;T</li>
+            <li>Tolerance analysis</li>
+            <li>Drill bushings</li>
+            <li>Locating pins</li>
+            <li>Bill of materials</li>
+            <li>Assembly drawings</li>
+            <li>Detail drawings</li>
+          </ul>
+        </div>
+        <div class="kw-row">
+          <span class="kw-label">Skills</span>
+          <ul class="kw-list">
+            <li>Attention to detail</li>
+            <li>Design for manufacturability</li>
+            <li>Process thinking</li>
+            <li>Technical documentation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gallery gallery-paired">
+        <figure class="frame">
+          <div class="frame-img frame-img-paper"><img src="sandwich-drill-drawing.png" alt="Engineering assembly drawing of the sandwich drill jig with BOM and detail callouts." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 01</span><span class="caption-text">Assembly drawing with BOM, dimensioning, and tolerance block.</span></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-img frame-img-paper"><img src="sandwich-drill-3d.png" alt="SolidWorks 3D rendering of the sandwich drill jig assembly." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 02</span><span class="caption-text">3D assembly view. Top plate, base plate, spring stop buttons.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- ============================
+         PROJECT 04 — Tool Design
+    ============================ -->
+    <article class="project" id="project-tooldesign">
+      <header class="project-header">
+        <div class="project-meta">
+          <span class="project-num">04</span>
+          <span class="project-year">2023, Tool Design coursework</span>
+        </div>
+        <h2 class="project-title">Tool Design, Drill Jig and Press Tooling</h2>
+        <p class="project-deck">A foundational tool design course where I worked on jigs, fixtures, and basic press dies, with the deliverable being a set of fully annotated SolidWorks drawings.</p>
+        <ul class="project-tags">
+          <li>Tool design</li>
+          <li>Press dies</li>
+          <li>SolidWorks</li>
+          <li>CAD drawings</li>
+        </ul>
+      </header>
+
+      <div class="copy-grid">
+        <div class="copy-col">
+          <h3>Overview</h3>
+          <p>
+            This course was an introduction to tool design, with a focus on jig and fixture design and die design. We covered drilling and milling fixtures, holding and assembly jigs, and basic pressworking dies like blanking and piercing tools. For my main deliverable, I designed a drill jig in SolidWorks meant to keep hole alignment and depth consistent while holding the workpiece securely. The drawing set details the locating pins, bushings, clamps, and base plate, along with the calculations and material choices behind them.
+          </p>
+        </div>
+        <div class="copy-col">
+          <h3>What I worked on</h3>
+          <ul class="hl-list">
+            <li><span>Designed a custom drill jig and produced fully dimensioned assembly and detail drawings in SolidWorks.</span></li>
+            <li><span>Worked through the calculations and material research, then validated the design before drafting.</span></li>
+            <li><span>Studied basic press die design, including blanking and piercing tools, alongside the jig work.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="keywords">
+        <div class="kw-row">
+          <span class="kw-label">Technical</span>
+          <ul class="kw-list">
+            <li>SolidWorks</li>
+            <li>Tool design</li>
+            <li>Jig and fixture design</li>
+            <li>Die design</li>
+            <li>Blanking and piercing</li>
+            <li>Drill bushings</li>
+            <li>Material selection</li>
+            <li>Engineering calculations</li>
+            <li>Assembly drawings</li>
+          </ul>
+        </div>
+        <div class="kw-row">
+          <span class="kw-label">Skills</span>
+          <ul class="kw-list">
+            <li>Precision focus</li>
+            <li>Design validation</li>
+            <li>Technical research</li>
+            <li>Safety mindset</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gallery gallery-paired">
+        <figure class="frame">
+          <div class="frame-img frame-img-paper"><img src="tool-design-drawing.png" alt="Engineering assembly drawing of the drill jig with locating pins, knee crank, and BOM." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 01</span><span class="caption-text">Assembly drawing. Base plate, knee crank, locating pins.</span></figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-img frame-img-paper"><img src="tool-design-3d.png" alt="SolidWorks 3D rendering of the drill jig with crank arm and clamping cylinder." loading="lazy" /></div>
+          <figcaption><span class="caption-num">Fig. 02</span><span class="caption-text">3D model. Crank arm, clamping cylinder, base plate.</span></figcaption>
+        </figure>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about">
+    <div class="section-eyebrow"><span class="eb-num">§ 02</span><span>About</span></div>
+
+    <div class="about-grid">
+      <div class="about-main">
+        <h2 class="about-headline">A little about me.</h2>
+        <p>
+          I&rsquo;m a Mechatronics Engineering student at the University of Waterloo, and I really like building things you can hold. Most of my work so far has been on the mechanical side: robotics, jigs and fixtures, and capstone mechanism work. I&rsquo;m now learning to layer control systems, embedded programming, and sensor-driven autonomy on top of that, which is what brought me to Mechatronics in the first place.
+        </p>
+        <p>
+          I&rsquo;m looking for co-op and internship opportunities in mechanical design, tool design, robotics, and mechatronic systems. I&rsquo;d love a place where I can keep learning and ship hardware end to end.
+        </p>
+      </div>
+
+      <aside class="about-side">
+        <dl class="facts">
+          <div><dt>Program</dt><dd>Mechatronics Engineering<br/>University of Waterloo</dd></div>
+          <div><dt>Software</dt><dd>SolidWorks, AutoCAD, VEXcode IQ</dd></div>
+          <div><dt>Languages</dt><dd>C++, Python, MATLAB</dd></div>
+          <div><dt>Methods</dt><dd>GD&amp;T, DFM, iterative prototyping</dd></div>
+          <div><dt>Shop</dt><dd>Mill, lathe, drill press, hand tools</dd></div>
+          <div><dt>Based in</dt><dd>Toronto, Ontario</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact">
+    <div class="section-eyebrow"><span class="eb-num">§ 03</span><span>Contact</span></div>
+
+    <h2 class="contact-headline">Let&rsquo;s chat.</h2>
+    <p class="contact-sub">
+      If you&rsquo;d like to talk about co-op terms, internships, or even just mechanisms and sensors, I&rsquo;d love to hear from you. I try to read every message.
+    </p>
+
+    <div class="contact-actions">
+      <button type="button" id="emailBtn" class="btn btn-primary contact-btn" aria-label="Reveal email address">
+        <span>Show email</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M3 7l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-row">
+      <span>© <span id="year"></span> &nbsp;Aung Myint Myat</span>
+      <span class="footer-meta">Hand-built. No trackers. No third-party scripts.</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
