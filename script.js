@@ -39,13 +39,13 @@
       num: '02',
       kicker: 'Capstone · Jan to Apr 2024',
       title: 'Golf Ball Picker',
-      deck: 'A team capstone where we tried to design a small mechanism for picking up golf balls. We took it from a rough idea to a working prototype, a written report, and a presentation to faculty.',
+      deck: 'A team capstone where we tried to design a mechanism for picking up golf balls. We took it from a rough idea to a working prototype, a written report, and a presentation to faculty.',
       tags: ['Capstone', 'Mechanism design', 'SolidWorks', 'Prototyping'],
       feature: { type: 'image', src: 'golfball-prototype.jpg',
                  cap: 'The final prototype on the bench. Worm-gear actuation, a swinging arm, and a capture cup.' },
       overview: 'For our capstone, my team set out to design a small mechanism that could pick up golf balls. Most existing tools are either bulky or imprecise, so we wanted to try something more compact and repeatable that we could actually build, test, and present within the time and budget we had. We combined mechanical design, CAD modelling, and a fair amount of shop time to put together a working prototype, then wrote a technical report and presented the work to faculty.',
       worked: [
-        'Helped design the mechanism in SolidWorks and worked through the gear ratios, geometry, and tolerances with the team.',
+        'Designed the mechanism in SolidWorks and worked through the gear ratios, geometry, and tolerances as a Mechanical lead.',
         'Did hands-on shop work to machine, assemble, and refine the prototype across about three rounds of bench testing.',
         'Contributed to the technical report and the final presentation to faculty and peers.'
       ],
