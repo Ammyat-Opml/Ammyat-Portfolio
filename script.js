@@ -20,7 +20,7 @@
       tags: ['Robotics', 'Embedded C++', 'Sensor integration', 'Mechanism design'],
       feature: { type: 'video', src: 'vex-demo.mp4', poster: 'vex-video-poster.jpg',
                  cap: 'A short demo of the full workflow: startup, sense, navigate, sort, shutdown.' },
-      overview: 'This was a course project built on the VEX IQ platform. The goal was to put together a robot that could run a full autonomous routine on its own, so it powers on, looks around, drives toward objects, makes a guess about what each one is, and drops it into the right bin before shutting down. The workflow is written in C++ on VEXcode IQ, and I tried to build the mechanical side around what the sensors could actually see.',
+      overview: 'This was a course project built on the VEX IQ platform. The goal was to put together a robot that could run a full autonomous routine on its own, so it powers on, looks around, dr[...]
       worked: [
         'Wrote the full workflow in C++, which helped reduce classification errors and made runs feel more consistent during testing.',
         'Hooked up bumper, optical, distance, and Touch LED sensors so the robot could tell objects apart by size and colour in mixed scenarios.',
@@ -43,7 +43,7 @@
       tags: ['Capstone', 'Mechanism design', 'SolidWorks', 'Prototyping'],
       feature: { type: 'image', src: 'golfball-prototype.jpg',
                  cap: 'The final prototype on the bench. Worm-gear actuation, a swinging arm, and a capture cup.' },
-      overview: 'For our capstone, my team set out to design a small mechanism that could pick up golf balls. Most existing tools are either bulky or imprecise, so we wanted to try something more compact and repeatable that we could actually build, test, and present within the time and budget we had. We combined mechanical design, CAD modelling, and a fair amount of shop time to put together a working prototype, then wrote a technical report and presented the work to faculty.',
+      overview: 'For our capstone, my team set out to design as mechanism that could pick up golf balls. Most existing tools are either bulky or imprecise, so we wanted to try something more [...]
       worked: [
         'Designed the mechanism in SolidWorks and worked through the gear ratios, geometry, and tolerances as a Mechanical lead.',
         'Did hands-on shop work to machine, assemble, and refine the prototype across about three rounds of bench testing.',
@@ -65,7 +65,7 @@
       tags: ['Jig and fixture design', 'SolidWorks', 'GD&T'],
       feature: { type: 'image', src: 'sandwich-drill-drawing.png', paper: true,
                  cap: 'Assembly drawing with BOM, dimensioning, and tolerance block.' },
-      overview: 'When you are drilling through several stacked parts, keeping the holes lined up across every layer is harder than it sounds. Manual clamping and eyeballing the position tends to cause drift, especially with thin layered materials. For this course project, I designed a drill jig that holds the workpieces in a sandwich arrangement, so an operator can load the parts the same way every time and get the same hole pattern back.',
+      overview: 'When you are drilling through several stacked parts, keeping the holes lined up across every layer is harder than it sounds. Manual clamping and eyeballing the position tends to c[...]
       worked: [
         'Designed the jig in SolidWorks with locating pins, hardened drill bushings, and rigid top and base plates.',
         'Worked through tolerances, dimensioning, and a bill of materials for the full assembly and detail drawings.',
@@ -86,13 +86,13 @@
       tags: ['Tool design', 'Press dies', 'SolidWorks', 'CAD drawings'],
       feature: { type: 'image', src: 'tool-design-drawing.png', paper: true,
                  cap: 'Assembly drawing. Base plate, knee crank, locating pins.' },
-      overview: 'This course was an introduction to tool design, with a focus on jig and fixture design and die design. We covered drilling and milling fixtures, holding and assembly jigs, and basic pressworking dies like blanking and piercing tools. For my main deliverable, I designed a drill jig in SolidWorks meant to keep hole alignment and depth consistent while holding the workpiece securely. The drawing set details the locating pins, bushings, clamps, and base plate, along with the calculations and material choices behind them.',
+      overview: 'This course was an introduction to tool design, with a focus on jig and fixture design and die design. We covered drilling and milling fixtures, holding and assembly jigs, and bas[...]
       worked: [
         'Designed a custom drill jig and produced fully dimensioned assembly and detail drawings in SolidWorks.',
         'Worked through the calculations and material research, then validated the design before drafting.',
         'Studied basic press die design, including blanking and piercing tools, alongside the jig work.'
       ],
-      technical: ['SolidWorks', 'Tool design', 'Jig and fixture design', 'Die design', 'Blanking and piercing', 'Drill bushings', 'Material selection', 'Engineering calculations', 'Assembly drawings'],
+      technical: ['SolidWorks', 'Tool design', 'Jig and fixture design', 'Die design', 'Blanking and piercing', 'Drill bushings', 'Material selection', 'Engineering calculations', 'Assembly drawin[...]
       skills: ['Precision focus', 'Design validation', 'Technical research', 'Safety mindset'],
       gallery: [
         { src: 'tool-design-3d.png', tag: 'Fig. 02', cap: '3D model. Crank arm, clamping cylinder, base plate.', paper: true }
