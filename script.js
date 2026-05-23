@@ -61,7 +61,7 @@
       num: '03',
       kicker: 'Tool Design · Sep to Dec 2023',
       title: 'Sandwich Drill Jig',
-      deck: 'A small fixture for drilling holes through several stacked parts at once, designed to keep everything aligned without needing a lot of operator skill.',
+      deck: 'A fixture for drilling holes through several stacked parts at once, designed to keep everything aligned without needing a lot of operator skill.',
       tags: ['Jig and fixture design', 'SolidWorks', 'GD&T'],
       feature: { type: 'image', src: 'sandwich-drill-drawing.png', paper: true,
                  cap: 'Assembly drawing with BOM, dimensioning, and tolerance block.' },
