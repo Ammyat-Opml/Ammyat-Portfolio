@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aung Myint Myat, Mechatronics Engineering student at the University of Waterloo. Portfolio of robotics, mechanism, and tool design projects." />
+  <meta name="author" content="Aung Myint Myat" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0c0d10" />
+
+  <meta property="og:title" content="Aung Myint Myat, Engineering Portfolio" />
+  <meta property="og:description" content="Mechatronics Engineering student at the University of Waterloo. Robotics, mechanism, and tool design." />
+  <meta property="og:type" content="website" />
+
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 img-src 'self' data:;
+                 media-src 'self';
+                 style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                 font-src 'self' https://fonts.gstatic.com;
+                 script-src 'self';
+                 connect-src 'self';
+                 object-src 'none';
+                 base-uri 'self';
+                 form-action 'self';
+                 frame-ancestors 'none';
+                 upgrade-insecure-requests" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=()" />
+
+  <title>Aung Myint Myat · Mechatronics Engineering Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c0d10'/%3E%3Ctext x='16' y='22' font-family='Space Grotesk,sans-serif' font-size='17' font-weight='700' fill='%23ff6b3d' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- Ambient background -->
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ============================================
+       HOME VIEW — everything visible without scroll
+  ============================================= -->
+  <div class="app" id="app">
+
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="topbar-brand">
+        <span class="logo-dot"></span>
+        <span class="brand-text">Aung Myint Myat</span>
+      </div>
+      <div class="topbar-status">
+        <span class="status-dot"></span>
+        <span>Open to co-op &amp; internships</span>
+      </div>
+      <button class="topbar-contact" data-open-contact type="button">
+        <span>Contact</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </header>
+
+    <!-- Home content -->
+    <main class="home" id="home-view">
+      <!-- Left rail: intro -->
+      <section class="intro">
+        <div class="intro-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span>Portfolio / 2026</span>
+        </div>
+        <h1 class="intro-title">
+          I build mechanical
+          <span class="title-accent">systems</span>
+          that work.
+        </h1>
+        <p class="intro-text">
+          Hi, I&rsquo;m Aung, a Mechatronics Engineering student at the University of Waterloo. I like designing things you can hold, from robots to jigs to mechanisms. Pick a project on the right to jump straight in.
+        </p>
+        <div class="intro-meta">
+          <div class="meta-item">
+            <span class="meta-k">Focus</span>
+            <span class="meta-v">Robotics · Tool design · Mechatronics</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-k">Based in</span>
+            <span class="meta-v">Toronto, Ontario</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-k">Toolkit</span>
+            <span class="meta-v">SolidWorks · C++ · MATLAB · Python</span>
+          </div>
+        </div>
+        <div class="intro-actions">
+          <button class="btn btn-solid" data-open-contact type="button">
+            <span>Get in touch</span>
+          </button>
+          <button class="btn btn-outline" data-open-about type="button">
+            <span>More about me</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Right: project grid (instant access, no scrolling) -->
+      <section class="grid" aria-label="Projects">
+        <button class="card" data-project="vex" type="button">
+          <div class="card-media">
+            <img src="vex-robot-2.jpg" alt="" loading="eager" />
+            <span class="card-badge">Robotics</span>
+            <span class="card-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+            </span>
+          </div>
+          <div class="card-body">
+            <span class="card-index">01</span>
+            <div class="card-info">
+              <h2 class="card-title">Autonomous Sorting Robot</h2>
+              <p class="card-desc">A VEX&nbsp;IQ robot that sorts objects by size and colour on its own.</p>
+            </div>
+            <span class="card-cta">
+              <span class="card-cta-text">Open project</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </div>
+        </button>
+
+        <button class="card" data-project="capstone" type="button">
+          <div class="card-media">
+            <img src="golfball-prototype.jpg" alt="" loading="eager" />
+            <span class="card-badge">Capstone</span>
+          </div>
+          <div class="card-body">
+            <span class="card-index">02</span>
+            <div class="card-info">
+              <h2 class="card-title">Golf Ball Picker</h2>
+              <p class="card-desc">A team capstone mechanism, from a rough idea to a working prototype.</p>
+            </div>
+            <span class="card-cta">
+              <span class="card-cta-text">Open project</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </div>
+        </button>
+
+        <button class="card" data-project="sandwich" type="button">
+          <div class="card-media">
+            <img src="sandwich-drill-3d.png" alt="" loading="eager" />
+            <span class="card-badge">Tool Design</span>
+          </div>
+          <div class="card-body">
+            <span class="card-index">03</span>
+            <div class="card-info">
+              <h2 class="card-title">Sandwich Drill Jig</h2>
+              <p class="card-desc">A precision fixture for drilling stacked parts in perfect alignment.</p>
+            </div>
+            <span class="card-cta">
+              <span class="card-cta-text">Open project</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </div>
+        </button>
+
+        <button class="card" data-project="tooldesign" type="button">
+          <div class="card-media">
+            <img src="tool-design-3d.png" alt="" loading="eager" />
+            <span class="card-badge">Tool Design</span>
+          </div>
+          <div class="card-body">
+            <span class="card-index">04</span>
+            <div class="card-info">
+              <h2 class="card-title">Drill Jig &amp; Press Tooling</h2>
+              <p class="card-desc">Foundational tool design, jigs, fixtures, and press dies in SolidWorks.</p>
+            </div>
+            <span class="card-cta">
+              <span class="card-cta-text">Open project</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </div>
+        </button>
+      </section>
+    </main>
+
+    <!-- Footer hint -->
+    <footer class="home-footer">
+      <span>© <span id="year"></span> Aung Myint Myat</span>
+      <span class="footer-hint">Click any project to explore · Press <kbd>Esc</kbd> to go back</span>
+      <span class="footer-built">Hand-built · No trackers</span>
+    </footer>
+
+  </div>
+
+  <!-- ============================================
+       PROJECT DETAIL PANEL (overlay, no scroll-away)
+  ============================================= -->
+  <div class="panel" id="panel" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="panel-scrim" data-close-panel></div>
+    <div class="panel-sheet">
+      <button class="panel-close" data-close-panel type="button" aria-label="Close project">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+
+      <!-- Quick project switcher inside the panel -->
+      <nav class="panel-switch" aria-label="Switch project">
+        <button data-jump="vex" type="button"><span>01</span> Sorting Robot</button>
+        <button data-jump="capstone" type="button"><span>02</span> Golf Ball Picker</button>
+        <button data-jump="sandwich" type="button"><span>03</span> Sandwich Jig</button>
+        <button data-jump="tooldesign" type="button"><span>04</span> Drill Jig</button>
+      </nav>
+
+      <div class="panel-body" id="panel-body">
+        <!-- filled by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       ABOUT PANEL
+  ============================================= -->
+  <div class="panel panel-mini" id="about-panel" aria-hidden="true" role="dialog" aria-modal="true" aria-label="About">
+    <div class="panel-scrim" data-close-about></div>
+    <div class="panel-sheet panel-sheet-mini">
+      <button class="panel-close" data-close-about type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="mini-content">
+        <span class="mini-eyebrow">About</span>
+        <h2 class="mini-title">A little about me</h2>
+        <p>
+          I&rsquo;m a Mechatronics Engineering student at the University of Waterloo, and I really like building things you can hold. Most of my work so far has been on the mechanical side: robotics, jigs and fixtures, and capstone mechanism work. I&rsquo;m now learning to layer control systems, embedded programming, and sensor-driven autonomy on top of that, which is what brought me to Mechatronics in the first place.
+        </p>
+        <p>
+          I&rsquo;m looking for co-op and internship opportunities in mechanical design, tool design, robotics, and mechatronic systems. I&rsquo;d love a place where I can keep learning and ship hardware end to end.
+        </p>
+        <div class="mini-facts">
+          <div><span class="mf-k">Program</span><span class="mf-v">Mechatronics Engineering, University of Waterloo</span></div>
+          <div><span class="mf-k">Software</span><span class="mf-v">SolidWorks, AutoCAD, VEXcode IQ</span></div>
+          <div><span class="mf-k">Languages</span><span class="mf-v">C++, Python, MATLAB</span></div>
+          <div><span class="mf-k">Methods</span><span class="mf-v">GD&amp;T, DFM, iterative prototyping</span></div>
+          <div><span class="mf-k">Shop</span><span class="mf-v">Mill, lathe, drill press, hand tools</span></div>
+          <div><span class="mf-k">Based in</span><span class="mf-v">Toronto, Ontario</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       CONTACT PANEL
+  ============================================= -->
+  <div class="panel panel-mini" id="contact-panel" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Contact">
+    <div class="panel-scrim" data-close-contact></div>
+    <div class="panel-sheet panel-sheet-mini">
+      <button class="panel-close" data-close-contact type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="mini-content mini-content-contact">
+        <span class="mini-eyebrow">Contact</span>
+        <h2 class="mini-title">Let&rsquo;s chat</h2>
+        <p>
+          If you&rsquo;d like to talk about co-op terms, internships, or even just mechanisms and sensors, I&rsquo;d love to hear from you. I try to read every message.
+        </p>
+        <button type="button" id="emailBtn" class="btn btn-solid btn-big" aria-label="Reveal email address">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M3 7l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>
+          <span>Show email</span>
+        </button>
+        <p class="contact-note">The address opens in your mail app.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
