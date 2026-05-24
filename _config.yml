@@ -1,0 +1,13 @@
+title: "Aung Myint Myat · Engineering Portfolio"
+description: "Mechatronics Engineering Portfolio"
+
+# GitHub Pages Configuration
+markdown: kramdown
+theme: jekyll-theme-minimal
+
+# Force HTTPS
+url: "https://ammyat-opml.github.io"
+baseurl: "/Ammyat-Portfolio"
+
+# Security headers (will be set via GitHub Pages)
+secure: true
