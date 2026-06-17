@@ -232,7 +232,7 @@
     }
   };
 
-  var ORDER = ['leg', 'vex', 'capstone', 'sandwich', 'tooldesign', 'watonomous'];
+  var ORDER = ['leg', 'watonomous' , 'vex', 'capstone', 'sandwich', 'tooldesign'];
 
   /* --------------------------------------------
      Helper functions
