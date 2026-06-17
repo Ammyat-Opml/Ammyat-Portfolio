@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c0d10'/%3E%3Ctext x='16' y='22' font-family='Space Grotesk,sans-serif' font-size='17' font-weight='700' fill='%23ff6b3d' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c0d10'/%3E%3Ctext x='50%25' y='50%25' font-size='18' font-weight='700' font-family='Inter' fill='%23fff' text-anchor='middle' dominant-baseline='central'%3EAM%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
 
@@ -79,7 +79,7 @@
           that work.
         </h1>
         <p class="intro-text">
-          Hi, I&rsquo;m Aung, a Mechatronics Engineering student at the University of Waterloo. I like designing things you can hold, from robots to jigs to mechanisms. Pick a project on the right to jump straight in.
+          Hi, I&rsquo;m Aung, a Mechatronics Engineering student at the University of Waterloo. I like designing things you can hold, from robots to jigs to mechanisms. Pick a project on the right to dive into my work.
         </p>
         <div class="intro-meta">
           <div class="meta-item">
@@ -127,6 +127,26 @@
           </div>
         </button>
 
+        <button class="card" data-project="watonomous" type="button">
+          <div class="card-media">
+            <img src="watonomous-forearm-1.png" alt="" loading="eager" />
+            <span class="card-badge">Robotics</span>
+          </div>
+          <div class="card-body">
+            <span class="card-index">02</span>
+            <div class="card-info">
+              <h2 class="card-title">Humanoid Forearm Structure</h2>
+              <p class="card-desc">Actuator housing and joint structure for a humanoid robot at WATonomous.</p>
+            </div>
+            <span class="card-cta">
+              <span class="card-cta-text">Open project</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </span>
+          </div>
+        </button>
+
         <button class="card" data-project="vex" type="button">
           <div class="card-media">
             <img src="vex-robot-2.jpg" alt="" loading="eager" />
@@ -136,7 +156,7 @@
             </span>
           </div>
           <div class="card-body">
-            <span class="card-index">02</span>
+            <span class="card-index">03</span>
             <div class="card-info">
               <h2 class="card-title">Autonomous Sorting Robot</h2>
               <p class="card-desc">A VEX&nbsp;IQ robot that sorts objects by size and colour on its own.</p>
@@ -156,7 +176,7 @@
             <span class="card-badge">Capstone</span>
           </div>
           <div class="card-body">
-            <span class="card-index">03</span>
+            <span class="card-index">04</span>
             <div class="card-info">
               <h2 class="card-title">Golf Ball Picker</h2>
               <p class="card-desc">A team capstone mechanism, from a rough idea to a working prototype.</p>
@@ -176,7 +196,7 @@
             <span class="card-badge">Tool Design</span>
           </div>
           <div class="card-body">
-            <span class="card-index">04</span>
+            <span class="card-index">05</span>
             <div class="card-info">
               <h2 class="card-title">Sandwich Drill Jig</h2>
               <p class="card-desc">A precision fixture for drilling stacked parts in perfect alignment.</p>
@@ -196,30 +216,10 @@
             <span class="card-badge">Tool Design</span>
           </div>
           <div class="card-body">
-            <span class="card-index">05</span>
+            <span class="card-index">06</span>
             <div class="card-info">
               <h2 class="card-title">Drill Jig &amp; Press Tooling</h2>
               <p class="card-desc">Foundational tool design, jigs, fixtures, and press dies in SolidWorks.</p>
-            </div>
-            <span class="card-cta">
-              <span class="card-cta-text">Open project</span>
-              <span class="card-arrow" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </span>
-            </span>
-          </div>
-        </button>
-
-        <button class="card" data-project="watonomous" type="button">
-          <div class="card-media">
-            <img src="watonomous-forearm-1.png" alt="" loading="eager" />
-            <span class="card-badge">Robotics</span>
-          </div>
-          <div class="card-body">
-            <span class="card-index">06</span>
-            <div class="card-info">
-              <h2 class="card-title">Humanoid Forearm Structure</h2>
-              <p class="card-desc">Actuator housing and joint structure for a humanoid robot at WATonomous.</p>
             </div>
             <span class="card-cta">
               <span class="card-cta-text">Open project</span>
@@ -254,11 +254,11 @@
       <!-- Quick project switcher inside the panel -->
       <nav class="panel-switch" aria-label="Switch project">
         <button data-jump="leg" type="button"><span>01</span> Knee &amp; Ankle</button>
-        <button data-jump="vex" type="button"><span>02</span> Sorting Robot</button>
-        <button data-jump="capstone" type="button"><span>03</span> Golf Ball Picker</button>
-        <button data-jump="sandwich" type="button"><span>04</span> Sandwich Jig</button>
-        <button data-jump="tooldesign" type="button"><span>05</span> Drill Jig</button>
-        <button data-jump="watonomous" type="button"><span>06</span> Forearm</button>
+        <button data-jump="watonomous" type="button"><span>02</span> Forearm</button>
+        <button data-jump="vex" type="button"><span>03</span> Sorting Robot</button>
+        <button data-jump="capstone" type="button"><span>04</span> Golf Ball Picker</button>
+        <button data-jump="sandwich" type="button"><span>05</span> Sandwich Jig</button>
+        <button data-jump="tooldesign" type="button"><span>06</span> Drill Jig</button>
       </nav>
 
       <div class="panel-body" id="panel-body">
@@ -280,10 +280,10 @@
         <span class="mini-eyebrow">About</span>
         <h2 class="mini-title">A little about me</h2>
         <p>
-          I&rsquo;m a Mechatronics Engineering student at the University of Waterloo, and I really like building things you can hold. Most of my work so far has been on the mechanical side: robotics, jigs and fixtures, and capstone mechanism work. I&rsquo;m now learning to layer control systems, embedded programming, and sensor-driven autonomy on top of that, which is what brought me to Mechatronics in the first place.
+          I&rsquo;m a Mechatronics Engineering student at the University of Waterloo, and I really like building things you can hold. Most of my work so far has been on the mechanical side: robot design, tool design, and mechanisms.
         </p>
         <p>
-          I&rsquo;m looking for co-op and internship opportunities in mechanical design, tool design, robotics, and mechatronic systems. I&rsquo;d love a place where I can keep learning and ship hardware end to end.
+          I&rsquo;m looking for co-op and internship opportunities in mechanical design, tool design, robotics, and mechatronic systems. I&rsquo;d love a place where I can keep learning and ship real projects.
         </p>
         <div class="mini-facts">
           <div><span class="mf-k">Program</span><span class="mf-v">Mechatronics Engineering, University of Waterloo</span></div>
