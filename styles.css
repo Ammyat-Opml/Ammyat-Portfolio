@@ -1343,6 +1343,7 @@ kbd {
   text-align: center;
   gap: clamp(0.55rem, 1.4vh, 1rem);
   padding: clamp(1rem, 3vh, 2rem) 1rem;
+   padding-bottom: clamp(3rem, 9vh, 5.5rem);
 }
 .hero-eyebrow {
   display: inline-flex;
