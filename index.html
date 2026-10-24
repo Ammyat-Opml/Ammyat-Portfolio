@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aung Myint Myat, Mechatronics Engineering student at the University of Waterloo. Robotics, mechanism, and tool design, from first-principles calculations to hardware." />
+  <meta name="author" content="Aung Myint Myat" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0b0d" />
+
+  <meta property="og:title" content="Aung Myint Myat, Mechatronics Engineering Portfolio" />
+  <meta property="og:description" content="Robotics, mechanism, and tool design, from first-principles calculations to hardware you can hold." />
+  <meta property="og:type" content="website" />
+
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 img-src 'self' data:;
+                 media-src 'self';
+                 style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+                 font-src 'self' https://fonts.gstatic.com;
+                 script-src 'self';
+                 connect-src 'self';
+                 object-src 'none';
+                 base-uri 'self';
+                 form-action 'self';
+                 frame-ancestors 'none';
+                 upgrade-insecure-requests" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=()" />
+
+  <title>Aung Myint Myat · Mechatronics Engineering Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0b0d'/%3E%3Ctext x='16' y='22' font-family='Space Grotesk,sans-serif' font-size='15' font-weight='700' fill='%23f2f3f6' text-anchor='middle'%3EA%3C/text%3E%3Ccircle cx='24.5' cy='9' r='2.4' fill='%23ff6b3d'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ambient: monochrome only, no colour in the back -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#top" data-scroll="top">
+      <span class="brand-mark">AM</span>
+      <span class="brand-name">Aung Myint Myat</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <button data-scroll="work" type="button">Work</button>
+      <button data-scroll="experience" type="button">Experience</button>
+      <button data-scroll="about" type="button">About</button>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-status"><span class="status-dot"></span>Open to co-op</span>
+      <button class="nav-contact" data-scroll="contact" type="button">
+        <span>Contact</span>
+        <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>Mechatronics Engineering · University of Waterloo</p>
+        <h1 class="hero-title reveal">
+          <span class="ht-line">I build mechanical</span>
+          <span class="ht-line">systems that <span class="accent">move</span>.</span>
+        </h1>
+        <p class="hero-tag reveal">Robotics, tool design, and mechanism work, taken from first-principles calculations to hardware you can hold.</p>
+        <div class="hero-actions reveal">
+          <button class="btn btn-solid" data-scroll="work" type="button"><span>View work</span>
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.9" d="M12 5v14M6 13l6 6 6-6"/></svg>
+          </button>
+          <button class="btn btn-ghost" data-scroll="contact" type="button"><span>Get in touch</span></button>
+        </div>
+        <ul class="hero-meta reveal">
+          <li><span class="hm-k">Based in</span><span class="hm-v">Toronto, ON</span></li>
+          <li><span class="hm-k">Now</span><span class="hm-v">Product Support Co-op · INNIO</span></li>
+          <li><span class="hm-k">Core</span><span class="hm-v">SolidWorks · CREO · C++ · GD&amp;T</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-stage reveal" aria-hidden="true">
+        <div class="stage-ring"></div>
+        <div class="stage-floor"></div>
+        <img class="hero-leg" src="leg-hero.png" alt="" />
+        <span class="stage-tag stage-tag-1">2-DOF ankle</span>
+        <span class="stage-tag stage-tag-2">1-DOF knee</span>
+        <span class="stage-cap">Humanoid leg · WATonomous</span>
+      </div>
+
+      <button class="hero-scroll" data-scroll="experience" type="button" aria-label="Scroll down">
+        <span>Scroll</span><span class="scroll-line"></span>
+      </button>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="exp" id="experience">
+      <header class="sec-head reveal">
+        <p class="sec-eyebrow"><span class="eyebrow-dot"></span>Experience</p>
+        <h2 class="sec-title">Where I have been building</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="tl-item reveal is-now">
+          <div class="tl-node"></div>
+          <div class="tl-when">Sep 2026 — Present</div>
+          <div class="tl-main">
+            <h3 class="tl-role">Product Support Engineering Co-op</h3>
+            <p class="tl-org">INNIO Waukesha Gas Engines <span class="tl-loc">· Welland, ON</span></p>
+            <ul class="tl-points">
+              <li>Reduced annual costs by <b>$20,000 USD</b> by running design analysis on reciprocating engine and genset assembly issues and implementing validated <b>CREO</b> design changes.</li>
+              <li>Released parametric 3D models, 2D manufacturing drawings, and technical data packages through <b>PLM Windchill</b>, completing ECOs and updating Bills of Materials in <b>Oracle</b> for every change.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item reveal">
+          <div class="tl-node"></div>
+          <div class="tl-when">May 2026 — Aug 2026</div>
+          <div class="tl-main">
+            <h3 class="tl-role">Hardware Designer</h3>
+            <p class="tl-org">WATonomous Design Team · Humanoid Autonomy</p>
+            <ul class="tl-points">
+              <li>Designed <b>forearm and ankle joint structures</b> for a humanoid robot by running load and range-of-motion calculations to define actuator selection and joint geometry in <b>SolidWorks</b> and <b>OnShape</b>.</li>
+              <li>Eliminated prototype fit failures by applying <b>GD&amp;T</b> and tolerance stack-up analysis and releasing revision-controlled 2D drawings into the team build pipeline.</li>
+            </ul>
+            <button class="tl-link" data-project="leg" type="button">See the humanoid leg project
+              <svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="tl-item reveal">
+          <div class="tl-node"></div>
+          <div class="tl-when">Jan 2026 — Apr 2026</div>
+          <div class="tl-main">
+            <h3 class="tl-role">Consultant, AI Strategy</h3>
+            <p class="tl-org">Microsoft Azure &amp; AI Fundamentals · Waterloo Experience</p>
+            <ul class="tl-points">
+              <li>Delivered an adopted AI tooling strategy for a nonprofit by producing a 15-page report and presenting findings to stakeholders; earned <b>Microsoft Certified: Azure AI Fundamentals (AI-900)</b>.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl-item reveal">
+          <div class="tl-node"></div>
+          <div class="tl-when">May 2024 — Dec 2024</div>
+          <div class="tl-main">
+            <h3 class="tl-role">Mechanical Design Intern <span class="tl-remote">Remote</span></h3>
+            <p class="tl-org">Wai Yan Hlaing Company Limited</p>
+            <ul class="tl-points">
+              <li>Cut design revision cycles by <b>15%</b> across 10+ assemblies by producing <b>SolidWorks</b> and <b>AutoCAD</b> 2D drawings with GD&amp;T callouts and DFM specs for CNC machining and 3D printing.</li>
+              <li>Eliminated downstream rework by conducting <b>DFA</b> reviews and failure analysis on press-fit and bearing-fit issues before manufacturing release.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work">
+      <header class="sec-head reveal">
+        <p class="sec-eyebrow"><span class="eyebrow-dot"></span>Selected work</p>
+        <h2 class="sec-title">Five projects, hardware first</h2>
+        <p class="sec-sub">A humanoid leg, an autonomous robot, and precision tooling. Open any project for the build and the calculations behind it.</p>
+      </header>
+
+      <div class="cards">
+        <button class="card card-feature reveal" data-project="leg" type="button" style="--i:0">
+          <div class="card-media media-float">
+            <img src="leg-hero.png" alt="" loading="eager" />
+          </div>
+          <div class="card-text">
+            <div class="card-top"><span class="card-num">01</span><span class="card-badge">Flagship · Robotics</span></div>
+            <h3 class="card-title">Humanoid Knee &amp; Ankle</h3>
+            <p class="card-desc">My own 2-DOF ankle and 1-DOF knee for a humanoid leg, with the actuator choice driven by a full torque analysis. Built with WATonomous.</p>
+            <span class="card-cta">Open project
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </button>
+
+        <button class="card reveal" data-project="vex" type="button" style="--i:1">
+          <div class="card-media"><img src="vex-2.jpg" alt="" loading="lazy" /><span class="card-badge float-badge">Robotics</span></div>
+          <div class="card-text">
+            <div class="card-top"><span class="card-num">02</span></div>
+            <h3 class="card-title">Autonomous Sorting Robot</h3>
+            <p class="card-desc">A VEX IQ robot that sorts objects by size and colour on its own, written in C++.</p>
+            <span class="card-cta">Open project
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </button>
+
+        <button class="card reveal" data-project="capstone" type="button" style="--i:2">
+          <div class="card-media"><img src="golf-proto.jpg" alt="" loading="lazy" /><span class="card-badge float-badge">Capstone</span></div>
+          <div class="card-text">
+            <div class="card-top"><span class="card-num">03</span></div>
+            <h3 class="card-title">Golf Ball Picker</h3>
+            <p class="card-desc">A team capstone mechanism, from a rough idea to a working prototype and a live demo.</p>
+            <span class="card-cta">Open project
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </button>
+
+        <button class="card reveal" data-project="sandwich" type="button" style="--i:3">
+          <div class="card-media media-float"><img src="sandwich-3d.png" alt="" loading="lazy" /><span class="card-badge float-badge">Tool Design</span></div>
+          <div class="card-text">
+            <div class="card-top"><span class="card-num">04</span></div>
+            <h3 class="card-title">Sandwich Drill Jig</h3>
+            <p class="card-desc">A precision fixture for drilling stacked parts in perfect alignment.</p>
+            <span class="card-cta">Open project
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </button>
+
+        <button class="card reveal" data-project="tooldesign" type="button" style="--i:4">
+          <div class="card-media media-float"><img src="tool-3d.png" alt="" loading="lazy" /><span class="card-badge float-badge">Tool Design</span></div>
+          <div class="card-text">
+            <div class="card-top"><span class="card-num">05</span></div>
+            <h3 class="card-title">Drill Jig &amp; Press Tooling</h3>
+            <p class="card-desc">Foundational jig, fixture, and press-die design in SolidWorks.</p>
+            <span class="card-cta">Open project
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <p class="sec-eyebrow"><span class="eyebrow-dot"></span>About</p>
+          <h2 class="sec-title">A mechanical designer, learning the rest</h2>
+          <p>I am a Mechatronics Engineering student at the University of Waterloo and a mechanical designer at heart. I like building things you can hold, and most of my work lives on the hardware side: robot joints, mechanisms, jigs, and the calculations behind them.</p>
+          <p>Right now I am on co-op as a Product Support Engineer at INNIO Waukesha, working on reciprocating engines and gensets, and I design humanoid joint hardware with WATonomous. I am always looking for the next place to learn and ship real hardware.</p>
+
+          <div class="edu">
+            <div class="edu-item">
+              <span class="edu-dot"></span>
+              <div>
+                <p class="edu-school">University of Waterloo</p>
+                <p class="edu-deg">BASc, Mechatronics Engineering (Co-op) · 2025 — Present</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <span class="edu-dot"></span>
+              <div>
+                <p class="edu-school">Centennial College</p>
+                <p class="edu-deg">Diploma, Mechanical Engineering Technician – Design · 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-skills reveal">
+          <h3 class="skills-h">Technical skills</h3>
+          <div class="skill-group">
+            <p class="sg-k">CAD &amp; Design</p>
+            <div class="chips"><span>CREO</span><span>SolidWorks</span><span>OnShape</span><span>AutoCAD</span><span>Inventor</span><span>GD&amp;T (ASME Y14.5)</span><span>Tolerance stack-up</span><span>Parametric modeling</span></div>
+          </div>
+          <div class="skill-group">
+            <p class="sg-k">Engineering Systems</p>
+            <div class="chips"><span>PLM Windchill</span><span>Oracle</span><span>ECOs</span><span>Bills of Materials</span><span>Technical Data Packages</span><span>Revision control</span><span>DFM</span><span>DFA</span><span>FEA</span></div>
+          </div>
+          <div class="skill-group">
+            <p class="sg-k">Mechanical &amp; Fabrication</p>
+            <div class="chips"><span>Engines &amp; gensets</span><span>Actuator &amp; joint design</span><span>Motors &amp; encoders</span><span>Kinematics</span><span>CNC machining</span><span>3D printing</span><span>Lathe &amp; milling</span></div>
+          </div>
+          <div class="skill-group">
+            <p class="sg-k">Programming &amp; Tools</p>
+            <div class="chips"><span>C++</span><span>Python</span><span>Root cause analysis</span><span>Failure analysis</span><span>MS Office</span></div>
+          </div>
+          <div class="skill-group">
+            <p class="sg-k">Certification</p>
+            <div class="chips"><span class="chip-accent">Microsoft Azure AI Fundamentals (AI-900)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="contact-inner reveal">
+        <p class="sec-eyebrow center"><span class="eyebrow-dot"></span>Contact</p>
+        <h2 class="contact-title">Let us build something.</h2>
+        <p class="contact-tag">If you want to talk co-op terms, internships, or just mechanisms and sensors, I would love to hear from you. I read every message.</p>
+        <div class="contact-actions">
+          <button type="button" id="emailBtn" class="btn btn-solid btn-big" aria-label="Reveal email address">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M3 7l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>
+            <span>Show email</span>
+          </button>
+        </div>
+        <p class="contact-loc">Toronto, Ontario · Open to co-op &amp; internships</p>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>© <span id="year"></span> Aung Myint Myat</span>
+      <span class="foot-mid">Mechatronics Engineering · University of Waterloo</span>
+      <span class="foot-built">Hand-built · No trackers</span>
+    </footer>
+
+  </main>
+
+  <!-- ============ PROJECT PANEL ============ -->
+  <div class="panel" id="panel" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="panel-scrim" data-close-panel></div>
+    <div class="panel-sheet">
+      <button class="panel-close" data-close-panel type="button" aria-label="Close project">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <nav class="panel-switch" aria-label="Switch project">
+        <button data-jump="leg" type="button"><span>01</span> Knee &amp; Ankle</button>
+        <button data-jump="vex" type="button"><span>02</span> Sorting Robot</button>
+        <button data-jump="capstone" type="button"><span>03</span> Golf Ball Picker</button>
+        <button data-jump="sandwich" type="button"><span>04</span> Sandwich Jig</button>
+        <button data-jump="tooldesign" type="button"><span>05</span> Drill Jig</button>
+      </nav>
+      <div class="panel-body" id="panel-body"><!-- filled by script.js --></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
